@@ -12,12 +12,15 @@ class FilterString extends Component{
         }
 
     }
-}
+
 
 handleUserInput(e){
     this.setState({
         userInput:e.target.value
     })
+
+}
+
 
 stringFilterer(userInput){
     let unfilteredArray = this.state.unfilteredArray

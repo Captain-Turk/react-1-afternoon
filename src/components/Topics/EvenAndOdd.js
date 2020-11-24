@@ -19,22 +19,23 @@ class EvenAndOdd extends Component{
         })        
     } 
 
-    evenOddSplitter(){
-        let evens = this.state.userInput.filter(numb => numb % 2 === 0);
-        let odds = this.state.userInput.filter(numb => numb % 2 === 1); 
+    // evenOddSplitter(){
+    //     console.log(this.state.userInput)
+    //     let evens = this.state.userInput.filter(numb => numb % 2 === 0);
+    //     let odds = this.state.userInput.filter(numb => numb % 2 === 1); 
 
-    // evenOddSplitter(userInput) {
-    //     let arr = userInput.split(',');
-    //     let evens = [];
-    //     let odds = [];
+    evenOddSplitter(userInput) {
+        let arr = userInput.split(',');
+        let evens = [];
+        let odds = [];
     
-    //     for ( let i = 0; i < arr.length; i++ ) {
-    //       if ( arr[i] % 2 === 0 ) {
-    //         evens.push( parseInt(arr[i], 10) );
-    //       } else {
-    //         odds.push( parseInt(arr[i], 10) );
-    //       }
-    //     }
+        for ( let i = 0; i < arr.length; i++ ) {
+          if ( arr[i] % 2 === 0 ) {
+            evens.push( parseInt(arr[i], 10) );
+          } else {
+            odds.push( parseInt(arr[i], 10) );
+          }
+        }
 
         
 
